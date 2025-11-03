@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+	<a-scene>
+		<a-sky color="#ECECEC"></a-sky>
+		<a-camera position="0 1.5 0"></a-camera>
+		
+		<!-- Load the Blender File-->
+		<a-assets>
+			<a-asset-item id="model0" src="3DScene.glb"></a-asset-item>
+		</a-assets>
+		
+		<!-- Display the File-->
+		<a-entity gltf-model="#model0" ></a-entity>
+		
+		
+	</a-scene>
+  </body>
+</html>
